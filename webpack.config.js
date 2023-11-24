@@ -9,6 +9,9 @@ module.exports = {
     output: {
         path: __dirname + '/dist/',
     },
+    resolve: {
+        extensions: ['.js', '.jsx'],
+    },
     module: {
         rules: [
             {
@@ -18,6 +21,11 @@ module.exports = {
                     extensions: ['.ts', '.tsx', '.js', '.json'],
                 },
                 use: 'ts-loader',
+            },
+            {
+                test: /\.jsx?$/,
+                use: 'babel-loader', // You might need to install babel-loader and @babel/core
+                exclude: /node_modules/,
             },
             {
                 test: /\.css$/,
@@ -44,6 +52,13 @@ module.exports = {
                         loader: 'file-loader',
                     },
                 ],
+            },
+            {
+                test: /\.(js|jsx)$/,
+                exclude: /node_modules/,
+                use: {
+                    loader: 'babel-loader',
+                },
             },
         ]
     },
