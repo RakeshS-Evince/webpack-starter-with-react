@@ -10,6 +10,7 @@ const App = () => {
             <br />
             <SvgHelper src={demoSvg} width={50} height={50} title={''} />
             <img src={profile} alt="" />
+            {process.env.BASE_URL}
             <Demo />
         </div>
     )

@@ -1,1 +1,1 @@
-{"version":3,"file":"main.css","mappings":";;;AAAA;IACI,WAAW;AACf,C","sources":["webpack://react-webpack-starter/./src/index.css"],"sourcesContent":["body {\r\n    color: blue;\r\n}"],"names":[],"sourceRoot":""}
+{"version":3,"file":"main.css","mappings":"AAAA;IACI,WAAW;AACf,C","sources":["webpack://react-webpack-starter/./src/index.css"],"sourcesContent":["body {\r\n    color: blue;\r\n}"],"names":[],"sourceRoot":""}
